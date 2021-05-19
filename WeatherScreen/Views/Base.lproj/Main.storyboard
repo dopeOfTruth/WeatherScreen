@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-qz-r1l">
+                                <rect key="frame" x="20" y="99" width="374" height="335"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCc-z3-QY9">
+                                <rect key="frame" x="207" y="453" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-FW-jMr">
+                                <rect key="frame" x="45" y="91" width="349" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAx-Yb-t4O">
+                                <rect key="frame" x="207" y="461" width="187" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9I-aE-rcA">
+                                <rect key="frame" x="354.5" y="804.5" width="24.5" height="22.5"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large" renderingMode="original"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchCityData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixH-Qx-KWV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vld-zh-eqQ">
+                                <rect key="frame" x="295" y="806" width="52" height="20"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="SAx-Yb-t4O" firstAttribute="top" secondItem="tCc-z3-QY9" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ki-qe-VE4"/>
+                            <constraint firstItem="tCc-z3-QY9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5cp-Oc-npd"/>
+                            <constraint firstItem="Gqf-FW-jMr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="9y2-a8-CCc"/>
+                            <constraint firstItem="SAx-Yb-t4O" firstAttribute="leading" secondItem="tCc-z3-QY9" secondAttribute="leading" id="Bxh-p6-cbb"/>
+                            <constraint firstItem="tCc-z3-QY9" firstAttribute="top" secondItem="xiE-qz-r1l" secondAttribute="bottom" constant="19" id="H1O-cK-gVP"/>
+                            <constraint firstItem="xiE-qz-r1l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OLL-wh-LDd"/>
+                            <constraint firstItem="xiE-qz-r1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bbY-7v-R1k"/>
+                            <constraint firstItem="xiE-qz-r1l" firstAttribute="top" secondItem="Gqf-FW-jMr" secondAttribute="bottom" constant="8" symbolic="YES" id="brP-go-luW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gqf-FW-jMr" secondAttribute="trailing" constant="20" id="evo-r4-08r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SAx-Yb-t4O" secondAttribute="trailing" constant="20" id="fUc-aZ-dDu"/>
+                            <constraint firstItem="tCc-z3-QY9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gR7-aH-ZDJ"/>
+                            <constraint firstItem="vld-zh-eqQ" firstAttribute="firstBaseline" secondItem="J9I-aE-rcA" secondAttribute="firstBaseline" id="lRa-8i-Cwf"/>
+                            <constraint firstItem="Gqf-FW-jMr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="lq9-hx-yc8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J9I-aE-rcA" secondAttribute="bottom" constant="35" id="orq-DP-n9P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xiE-qz-r1l" secondAttribute="trailing" constant="20" id="sS1-tP-4Ie"/>
+                            <constraint firstItem="J9I-aE-rcA" firstAttribute="leading" secondItem="vld-zh-eqQ" secondAttribute="trailing" constant="7.5" id="vmQ-RI-lEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9I-aE-rcA" secondAttribute="trailing" constant="35" id="wKp-zo-IUa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IconWeatherImageView" destination="xiE-qz-r1l" id="geJ-hV-tj7"/>
+                        <outlet property="cityNameLabel" destination="Gqf-FW-jMr" id="Rij-yt-KM6"/>
+                        <outlet property="feelsLikeTemoeratureLabel" destination="SAx-Yb-t4O" id="VqI-Vl-3CQ"/>
+                        <outlet property="temperatureLabel" destination="tCc-z3-QY9" id="f9W-l2-jFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
